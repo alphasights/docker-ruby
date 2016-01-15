@@ -1,0 +1,9 @@
+machine:
+  services:
+    - docker
+  environment:
+    image_name: ruby
+
+test:
+  override:
+    - docker build -t ruby:b$CIRCLE_BUILD_NUM .
