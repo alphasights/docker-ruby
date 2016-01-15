@@ -6,4 +6,4 @@ machine:
 
 test:
   override:
-    - docker build -t ruby:b$CIRCLE_BUILD_NUM .
+    - docker build -t ruby:$CIRCLE_SHA1 .
